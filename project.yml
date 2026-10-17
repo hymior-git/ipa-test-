@@ -1,0 +1,17 @@
+name: NotifyApp
+options:
+  bundleIdPrefix: com.custom
+targets:
+  NotifyApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - NotifyApp.swift
+    info:
+      path: Info.plist
+      properties:
+        UILaunchScreen: {}
+        NSPhotoLibraryUsageDescription: "Ứng dụng cần quyền truy cập ảnh để đính kèm vào thông báo."
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
